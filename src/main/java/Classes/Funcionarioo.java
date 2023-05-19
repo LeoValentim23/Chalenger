@@ -4,13 +4,14 @@ public class Funcionarioo {
     private String Nome;
     private String GuinchoUtili;
     private int numero;
+    private String stats;
 
 
 
-    public Funcionarioo(String Nome, int numero, String endereço) {
+    public Funcionarioo(String Nome, int numero, String GuinchoUtili , String stats) {
 
         this.Nome = Nome;
-
+        this.stats = stats;
         this.GuinchoUtili = GuinchoUtili;
         this.numero = numero;
 
@@ -42,5 +43,14 @@ public class Funcionarioo {
 
     public void numero(int numero) {
         this.numero = numero;
+    }
+
+    public String getStats() {
+        return stats;
+
+    }
+
+    public void setStats(String stats) {
+        this.stats = stats;
     }
 }
