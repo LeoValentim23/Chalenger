@@ -31,15 +31,15 @@ public class Guinchos {
         return Guincho_pesado_com_plat_hidráulica_munck;
     }
 
-    public void setGuincho_pesado_com_plat_hidráulica_munck(String c) {
-        this.Guincho_pesado_com_plat_hidráulica_munck = c;
+    public void setGuincho_pesado_com_plat_hidráulica_munck(String NOVO_Guincho_pesado_com_plat_hidráulica_munck) {
+        this.Guincho_pesado_com_plat_hidráulica_munck = NOVO_Guincho_pesado_com_plat_hidráulica_munck;
     }
 
 
 
 
     //Guincho_pesado_com_plataforma_hidráulica
-    public String getGuincho_pesado_com_plat_hidráulica() {
+    public String Guincho_pesado_com_plataforma_hidráulica() {
         return Guincho_pesado_com_plat_hidráulica_munck;
     }
 
