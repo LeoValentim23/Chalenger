@@ -60,9 +60,9 @@ public class Pedido {
             System.out.println("Guincho NÃO aprovado.");
         }
         if (tombado == 1 && Guincho_pesado_não_padrão) {
-            System.out.println("Guincho aprovado");
-        } else {
             System.out.println("Guincho NÃO aprovado");
+        } else {
+            System.out.println("Guincho aprovado");
         }
 
 
@@ -85,9 +85,9 @@ public class Pedido {
             System.out.println("Guincho NÃO aprovado.");
         }
         if (tombado == 1 && Guincho_pesado_com_plat_hidráulica_munck) {
-            System.out.println("Guincho aprovado");
-        } else {
             System.out.println("Guincho NÃO aprovado");
+        } else {
+            System.out.println("Guincho  aprovado");
         }
 
 
@@ -109,9 +109,9 @@ public class Pedido {
             System.out.println("Guincho NÃO aprovado.");
         }
         if (tombado == 1 && Guincho_pesado_com_plataforma_hidráulica_e_band) {
-            System.out.println("Guincho aprovado");
-        } else {
             System.out.println("Guincho NÃO aprovado");
+        } else {
+            System.out.println("Guincho aprovado");
         }
 
 
