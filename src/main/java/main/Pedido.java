@@ -10,7 +10,6 @@ public class Pedido {
         Scanner chamado = new Scanner(System.in);
         boolean Guincho_pesado_não_padrão = true;
         boolean Guincho_pesado_com_plat_hidráulica_munck= true;
-        boolean Guincho_pesado_com_plataforma_hidráulica = true;
         boolean Guincho_pesado_com_plataforma_hidráulica_e_band = true;
         boolean Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança = true;
         boolean Guincho_pesado_com_quinta_roda_e_lança = true;
@@ -19,8 +18,10 @@ public class Pedido {
         System.out.println("Bem vindo a Porto seguro, poderia me informar o CPF do cadastrado do veiculo. ");
         String CPF = chamado.next();
 
-        System.out.println("O seu veiculo esta tombado?");
-        String tombado = chamado.next();
+        System.out.println("O seu veiculo esta tombado?" +
+                "1- Sim" +
+                "2-Não");
+        int tombado = chamado.nextInt();
 
         System.out.println("O seu veiculo e a carga esta pesando quanto?");
         int peso =chamado.nextInt();
@@ -43,36 +44,145 @@ public class Pedido {
         }
 
 
-        //se os dois apresentarem O Guincho esta liberado, ele esta sendo liberado para utiliar o chamado
+        //se os  tres apresentarem  Guincho aprovado , ele esta sendo liberado para utiliar o chamado
+
+        System.out.println("Guincho_pesado_não_padrão");
         if (peso > 10 && Guincho_pesado_não_padrão) {
-            System.out.println("Parabéns! Você foi selecionado para uma vaga efeitva.");
+            System.out.println("Guincho aprovado.");
         }  else {
-            System.out.println("Você não foi selecionado desta vez. Tente novamente em breve.");
+            System.out.println("Guincho NÃO aprovado.");
         }
 
 
         if (peso < 100 && Guincho_pesado_não_padrão) {
-            System.out.println("Parabéns! Você foi selecionado para uma vaga efeitva.");
+            System.out.println("Guincho aprovado.");
         }  else {
-            System.out.println("Você não foi selecionado desta vez. Tente novamente em breve.");
+            System.out.println("Guincho NÃO aprovado.");
+        }
+        if (tombado == 1 && Guincho_pesado_não_padrão) {
+            System.out.println("Guincho aprovado");
+        } else {
+            System.out.println("Guincho NÃO aprovado");
         }
 
 
 
+
+
+
+
+        System.out.println("Guincho_pesado_com_plat_hidráulica_munck");
         if (peso > 10 && Guincho_pesado_com_plat_hidráulica_munck) {
-            System.out.println("Parabéns! Você foi selecionado para uma vaga efeitva.");
+            System.out.println("Guincho aprovado.");
         } else {
-            System.out.println("Você não foi selecionado desta vez. Tente novamente em breve.");
-        }for (int tombado = 1; tombado ==1 ; tombado = chamado.nextInt()) {
-            System.out.println("Parabéns! Você foi selecionado para uma vaga de estágio.");
+            System.out.println("Guincho NÃO aprovado.");
         }
 
 
         if (peso < 200 && Guincho_pesado_com_plat_hidráulica_munck) {
-            System.out.println("Parabéns! Você foi selecionado para uma vaga efeitva.");
+            System.out.println(" Guincho aprovado.");
         }  else {
-            System.out.println("Você não foi selecionado desta vez. Tente novamente em breve.");
+            System.out.println("Guincho NÃO aprovado.");
         }
+        if (tombado == 1 && Guincho_pesado_com_plat_hidráulica_munck) {
+            System.out.println("Guincho aprovado");
+        } else {
+            System.out.println("Guincho NÃO aprovado");
+        }
+
+
+
+
+
+
+        System.out.println("Guincho_pesado_com_plataforma_hidráulica_e_band");
+        if (peso > 10 && Guincho_pesado_com_plataforma_hidráulica_e_band) {
+            System.out.println("Guincho aprovado.");
+        } else {
+            System.out.println("Guincho NÃO aprovado.");
+        }
+
+
+        if (peso < 300 && Guincho_pesado_com_plataforma_hidráulica_e_band) {
+            System.out.println("Guincho aprovado.");
+        }  else {
+            System.out.println("Guincho NÃO aprovado.");
+        }
+        if (tombado == 1 && Guincho_pesado_com_plataforma_hidráulica_e_band) {
+            System.out.println("Guincho aprovado");
+        } else {
+            System.out.println("Guincho NÃO aprovado");
+        }
+
+
+
+
+
+
+        System.out.println("Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança ");
+        if (peso > 10 && Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança) {
+            System.out.println("Guincho aprovado.");
+        } else {
+            System.out.println("Guincho NÃO aprovado.");
+        }
+
+
+        if (peso < 100 && Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança) {
+            System.out.println("Guincho aprovado.");
+        }  else {
+            System.out.println("Guincho NÃO aprovado.");
+        }
+
+        if (tombado == 1 && Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança) {
+            System.out.println("Guincho aprovado");
+        } else {
+            System.out.println("Guincho NÃO aprovado");
+        }
+
+
+
+        System.out.println("Guincho_pesado_com_quinta_roda_e_lança");
+        if (peso > 10 && Guincho_pesado_com_quinta_roda_e_lança) {
+            System.out.println("Guincho aprovado.");
+        } else {
+            System.out.println("Guincho NÃO aprovado.");
+        }
+
+
+        if (peso < 200 && Guincho_pesado_com_quinta_roda_e_lança) {
+            System.out.println("Guincho aprovado.");
+        }  else {
+            System.out.println("Guincho NÃO aprovado.");
+        }
+
+        if (tombado == 1 && Guincho_pesado_com_quinta_roda_e_lança) {
+            System.out.println("Guincho aprovado");
+        } else {
+            System.out.println("Guincho NÃO aprovado");
+        }
+
+
+
+        System.out.println("Guincho_técnico_pesado_para_quincho_pesado");
+        if (peso > 10 && Guincho_técnico_pesado_para_quincho_pesado) {
+            System.out.println("Guincho aprovado.");
+        } else {
+            System.out.println("Guincho NÃO aprovado.");
+        }
+
+
+        if (peso < 300 && Guincho_técnico_pesado_para_quincho_pesado) {
+            System.out.println("Guincho aprovado.");
+        }  else {
+            System.out.println("Guincho NÃO aprovado.");
+        }
+
+        if (tombado == 1 && Guincho_técnico_pesado_para_quincho_pesado) {
+            System.out.println("Guincho aprovado");
+        } else {
+            System.out.println("Guincho NÃO aprovado");
+        }
+
 
 
 

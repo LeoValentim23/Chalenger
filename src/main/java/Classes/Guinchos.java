@@ -3,7 +3,6 @@ package Classes;
 public class Guinchos {
     private String Guincho_pesado_não_padrão;
     private String Guincho_pesado_com_plat_hidráulica_munck;
-    private String Guincho_pesado_com_plataforma_hidráulica;
     private String Guincho_pesado_com_plataforma_hidráulica_e_band;
     private String Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança;
     private String Guincho_pesado_com_quinta_roda_e_lança;
@@ -38,15 +37,7 @@ public class Guinchos {
 
 
 
-    //Guincho_pesado_com_plataforma_hidráulica
-    public String Guincho_pesado_com_plataforma_hidráulica() {
-        return Guincho_pesado_com_plat_hidráulica_munck;
-    }
 
-
-    public void setGuincho_pesado_com_plat_hidráulica(String NOVO_Guincho_pesado_com_plataforma_hidráulica) {
-        this.Guincho_pesado_com_plataforma_hidráulica = NOVO_Guincho_pesado_com_plataforma_hidráulica;
-    }
 
 
 

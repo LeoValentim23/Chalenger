@@ -4,10 +4,10 @@ package Classes;
 
 public class Cliente {
 
-        public String nome;
-        public String cpf;
-        public String email;
-        public int telefone;
+        private String nome;
+        private String cpf;
+        private String email;
+        private int telefone;
 
         public Cliente (String nome, String cpf, String email , int telefone) {
             this.nome = nome;
