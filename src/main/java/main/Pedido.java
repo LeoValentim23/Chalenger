@@ -18,9 +18,9 @@ public class Pedido {
         System.out.println("Bem vindo a Porto seguro, poderia me informar o CPF do cadastrado do veiculo. ");
         String CPF = chamado.next();
 
-        System.out.println("O seu veiculo esta tombado?" +
-                "1- Sim" +
-                "2-Não");
+        System.out.println("O seu veiculo esta tombado?"
+                " 1 - Sim" +
+                " 2 - Não");
         int tombado = chamado.nextInt();
 
         System.out.println("O seu veiculo e a carga esta pesando quanto?");
@@ -138,6 +138,7 @@ public class Pedido {
         } else {
             System.out.println("Guincho NÃO aprovado");
         }
+
 
 
 
