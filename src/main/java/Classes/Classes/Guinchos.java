@@ -1,4 +1,4 @@
-package Classes;
+package Classes.Classes;
 
 public class Guinchos {
     private String Guincho_pesado_não_padrão;

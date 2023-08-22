@@ -44,25 +44,25 @@ public class Pedido {
         }
 
 
-        //se os  tres apresentarem  Guincho aprovado , ele esta sendo liberado para utiliar o chamado
+        //se os  tres apresentarem  Classes.Classes.Guincho.Guincho aprovado , ele esta sendo liberado para utiliar o chamado
 
         System.out.println("Guincho_pesado_não_padrão");
         if (peso > 10 && Guincho_pesado_não_padrão) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         }  else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
 
 
         if (peso < 100 && Guincho_pesado_não_padrão) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         }  else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
         if (tombado == 1 && Guincho_pesado_não_padrão) {
-            System.out.println("Guincho NÃO aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado");
         } else {
-            System.out.println("Guincho aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado");
         }
 
 
@@ -73,21 +73,21 @@ public class Pedido {
 
         System.out.println("Guincho_pesado_com_plat_hidráulica_munck");
         if (peso > 10 && Guincho_pesado_com_plat_hidráulica_munck) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         } else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
 
 
         if (peso < 200 && Guincho_pesado_com_plat_hidráulica_munck) {
-            System.out.println(" Guincho aprovado.");
+            System.out.println(" Classes.Classes.Guincho.Guincho aprovado.");
         }  else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
         if (tombado == 1 && Guincho_pesado_com_plat_hidráulica_munck) {
-            System.out.println("Guincho NÃO aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado");
         } else {
-            System.out.println("Guincho  aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho  aprovado");
         }
 
 
@@ -97,21 +97,21 @@ public class Pedido {
 
         System.out.println("Guincho_pesado_com_plataforma_hidráulica_e_band");
         if (peso > 10 && Guincho_pesado_com_plataforma_hidráulica_e_band) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         } else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
 
 
         if (peso < 300 && Guincho_pesado_com_plataforma_hidráulica_e_band) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         }  else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
         if (tombado == 1 && Guincho_pesado_com_plataforma_hidráulica_e_band) {
-            System.out.println("Guincho NÃO aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado");
         } else {
-            System.out.println("Guincho aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado");
         }
 
 
@@ -121,22 +121,22 @@ public class Pedido {
 
         System.out.println("Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança ");
         if (peso > 10 && Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         } else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
 
 
         if (peso < 100 && Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         }  else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
 
         if (tombado == 1 && Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança) {
-            System.out.println("Guincho aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado");
         } else {
-            System.out.println("Guincho NÃO aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado");
         }
 
 
@@ -144,44 +144,44 @@ public class Pedido {
 
         System.out.println("Guincho_pesado_com_quinta_roda_e_lança");
         if (peso > 10 && Guincho_pesado_com_quinta_roda_e_lança) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         } else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
 
 
         if (peso < 200 && Guincho_pesado_com_quinta_roda_e_lança) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         }  else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
 
         if (tombado == 1 && Guincho_pesado_com_quinta_roda_e_lança) {
-            System.out.println("Guincho aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado");
         } else {
-            System.out.println("Guincho NÃO aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado");
         }
 
 
 
         System.out.println("Guincho_técnico_pesado_para_quincho_pesado");
         if (peso > 10 && Guincho_técnico_pesado_para_quincho_pesado) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         } else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
 
 
         if (peso < 300 && Guincho_técnico_pesado_para_quincho_pesado) {
-            System.out.println("Guincho aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado.");
         }  else {
-            System.out.println("Guincho NÃO aprovado.");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado.");
         }
 
         if (tombado == 1 && Guincho_técnico_pesado_para_quincho_pesado) {
-            System.out.println("Guincho aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho aprovado");
         } else {
-            System.out.println("Guincho NÃO aprovado");
+            System.out.println("Classes.Classes.Guincho.Guincho NÃO aprovado");
         }
 
 
