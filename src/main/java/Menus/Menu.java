@@ -1,5 +1,6 @@
 package Menus;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Menu {
@@ -38,6 +39,7 @@ public class Menu {
                     break;
             }
         }
+
     }
 }
 

@@ -1,4 +1,4 @@
-package Classes.Classes;
+package Classe;
 
 public class Endereço {
 
