@@ -1,10 +1,12 @@
 package Menus;
 
+import Classe.*;
 import Guincho.*;
 import java.util.Scanner;
+import java.util.List;
 
 class MenuChamado {
-    public static void realizarChamado(Scanner scanner) {
+    public static void realizarChamado(Scanner scanner, List<Funcionarioo> funcionariosDisponiveis) {
         System.out.println("Chamado");
 
         System.out.println("Informe o peso do veículo:");
@@ -35,13 +37,37 @@ class MenuChamado {
 
         System.out.println("Selecione o guincho adequado:");
         int opcaoGuincho = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); // Consumir a quebra de linha
 
         if (opcaoGuincho >= 1 && opcaoGuincho <= guinchos.length) {
             Guincho guinchoSelecionado = guinchos[opcaoGuincho - 1];
             System.out.println("Guincho selecionado: " + guinchoSelecionado.getNome());
+
+            Funcionarioo funcionarioDisponivel = encontrarFuncionario(guinchoSelecionado, funcionariosDisponiveis);
+
+            if (funcionarioDisponivel != null) {
+                System.out.println("Funcionário Disponível:");
+                System.out.println("Nome: " + funcionarioDisponivel.getNome());
+                System.out.println("Número: " + funcionarioDisponivel.getnumero());
+                System.out.println("Status: " + funcionarioDisponivel.getStats());
+                System.out.println("Endereço: " + funcionarioDisponivel.getEndereço().getLogradouro() + ", " +
+                        funcionarioDisponivel.getEndereço().getNumero() + " - " +
+                        funcionarioDisponivel.getEndereço().getCidade() + " - " +
+                        funcionarioDisponivel.getEndereço().getEstado());
+            } else {
+                System.out.println("Nenhum funcionário disponível para esse guincho.");
+            }
         } else {
             System.out.println("Opção inválida.");
         }
+    }
+
+    private static Funcionarioo encontrarFuncionario(Guincho guincho, List<Funcionarioo> funcionariosDisponiveis) {
+        for (Funcionarioo funcionario : funcionariosDisponiveis) {
+            if (funcionario.getGuinchoUtili().equalsIgnoreCase(guincho.getClass().getSimpleName())) {
+                return funcionario;
+            }
+        }
+        return null;
     }
 }

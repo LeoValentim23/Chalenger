@@ -7,7 +7,7 @@ public class Guincho_pesado_não_padrao extends Guincho {
 
     @Override
     public boolean pesoAdequado(int peso) {
-        return peso > 500;
+        return peso < 500;
     }
     @Override
     public boolean podeLevantarTombado() {

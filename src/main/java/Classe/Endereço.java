@@ -1,71 +1,57 @@
 package Classe;
 
 public class Endereço {
-
     private String cidade;
     private String estado;
     private int numero;
     private String logradouro;
     private String cep;
 
-    public Endereço (String logradouro , int numero , String cep, String cidade , String estado) {
-
+    public Endereço(String logradouro, int numero, String cep, String cidade, String estado) {
         this.logradouro = logradouro;
-        this.cep = cep ;
-        this.cidade =cidade;
+        this.cep = cep;
+        this.cidade = cidade;
         this.estado = estado;
-        this.numero =numero;
-
+        this.numero = numero;
     }
 
-    public String getLogradouro(){
-
+    public String getLogradouro() {
         return logradouro;
-
     }
 
-    public void setLogradouro (String logradouro) {
-        this.logradouro=logradouro;
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
     }
 
-    public String getCidade(){
-
+    public String getCidade() {
         return cidade;
-
     }
 
-    public void setCidade (String cidade) {
-        this.cidade=cidade;
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 
-    public String getEstado(){
-
+    public String getEstado() {
         return estado;
-
     }
 
-    public void setEstado (String estado) {
-        this.estado=estado;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
-    public String getCep(){
-
+    public String getCep() {
         return cep;
-
     }
 
-    public void setCep (String cep) {
-        this.cep=cep;
+    public void setCep(String cep) {
+        this.cep = cep;
     }
 
-    public int getNumero(){
-
+    public int getNumero() {
         return numero;
-
     }
 
-    public void setNumero (int numero) {
-        this.numero =numero;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
-
 }

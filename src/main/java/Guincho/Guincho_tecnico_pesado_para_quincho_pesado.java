@@ -7,7 +7,7 @@ public class Guincho_tecnico_pesado_para_quincho_pesado extends Guincho {
 
     @Override
     public boolean pesoAdequado(int peso) {
-        return peso > 500;
+        return peso < 500;
     }
 
     @Override

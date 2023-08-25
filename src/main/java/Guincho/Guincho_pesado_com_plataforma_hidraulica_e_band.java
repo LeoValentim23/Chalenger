@@ -7,7 +7,7 @@ public class Guincho_pesado_com_plataforma_hidraulica_e_band extends Guincho {
 
     @Override
     public boolean pesoAdequado(int peso) {
-        return peso > 100;
+        return peso < 100;
     }
 
     @Override
