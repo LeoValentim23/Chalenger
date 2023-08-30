@@ -19,39 +19,28 @@ public class Funcionarioo {
         return Nome;
     }
 
-    public void setNome(String Nome) {
-        this.Nome = Nome;
-    }
 
     public String getGuinchoUtili() {
         return GuinchoUtili;
     }
 
-    public void GuinchoUtili(String GuinchoUtili) {
-        this.GuinchoUtili = GuinchoUtili;
-    }
+
 
     public int getnumero() {
         return numero;
     }
 
-    public void numero(int numero) {
-        this.numero = numero;
-    }
+
 
     public String getStats() {
         return stats;
     }
 
-    public void setStats(String stats) {
-        this.stats = stats;
-    }
+
 
     public Endereço getEndereço() {
         return endereço;
     }
 
-    public void setEndereço(Endereço endereço) {
-        this.endereço = endereço;
-    }
+
 }

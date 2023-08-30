@@ -13,13 +13,14 @@ public class Disponivel {
         Endereço endereço6 = new Endereço("Rua rodrifo n20", 23233643, "0292242235", "osasco", "SP");
 
         List<Funcionarioo> funcionariosDisponiveis = new ArrayList<>();
-        funcionariosDisponiveis.add(new Funcionarioo("Leonardo", 121212222, "Guincho_pesado_não_padrão", "Disponivel", endereço1));
-        funcionariosDisponiveis.add(new Funcionarioo("Japa", 1222222230, "Guincho_pesado_com_plat_hidráulica_munck", "Disponivel", endereço2));
-        funcionariosDisponiveis.add(new Funcionarioo("Gustavo", 1222234730, "Guincho_pesado_com_plataforma_hidráulica_e_band", "Disponivel", endereço3));
-        funcionariosDisponiveis.add(new Funcionarioo("Lucas", 1547779676, "Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lança", "Disponivel", endereço4));
-        funcionariosDisponiveis.add(new Funcionarioo("cleber", 989777777, "Guincho_pesado_com_quinta_roda_e_lança", "Disponivel", endereço5));
-        funcionariosDisponiveis.add(new Funcionarioo("Guiga", 454545455, "Guincho_técnico_pesado_para_quincho_pesado", "Disponivel", endereço6));
+        funcionariosDisponiveis.add(new Funcionarioo("Leonardo", 121212222, "Guincho_pesado_com_plat_hidraulica_munck", "Disponivel", endereço1));
+        funcionariosDisponiveis.add(new Funcionarioo("Japa", 1222222230, "Guincho_pesado_com_plataforma_hidraulica_e_band ", "Disponivel", endereço2));
+        funcionariosDisponiveis.add(new Funcionarioo("Gustavo", 1222234730, "Guincho_pesado_com_quinta_roda_e_lanca", "Disponivel", endereço3));
+        funcionariosDisponiveis.add(new Funcionarioo("Lucas", 1547779676, "Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lanca", "Disponivel", endereço4));
+        funcionariosDisponiveis.add(new Funcionarioo("cleber", 989777777, "Guincho_pesado_não_padrao ", "Disponivel", endereço5));
+        funcionariosDisponiveis.add(new Funcionarioo("Guiga", 454545455, "Guincho_tecnico_pesado_para_quincho_pesado", "Disponivel", endereço6));
 
         return funcionariosDisponiveis;
     }
 }
+

@@ -11,7 +11,7 @@ public class Menu {
         Scanner scanner = new Scanner(System.in);
         int opcao;
 
-        // Crie a lista de funcionários disponíveis
+
         List<Funcionarioo> funcionariosDisponiveis = new ArrayList<>();
 
         System.out.println("Bem-vindo ao Menu Principal!");

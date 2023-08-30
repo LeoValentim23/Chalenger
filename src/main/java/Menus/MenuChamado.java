@@ -19,6 +19,7 @@ class MenuChamado {
         boolean veiculoTombado = respostaTombado.equalsIgnoreCase("S");
 
         Guincho[] guinchos = {
+                new Guincho_pesado_com_plat_hidraulica_munck(),
                 new Guincho_pesado_com_plataforma_hidraulica_e_band(),
                 new Guincho_pesado_com_quinta_roda_e_lanca(),
                 new Guincho_pesado_com_quinta_roda_pesado_com_torre_e_lanca(),
@@ -63,11 +64,17 @@ class MenuChamado {
     }
 
     private static Funcionarioo encontrarFuncionario(Guincho guincho, List<Funcionarioo> funcionariosDisponiveis) {
+        System.out.println("Nome do guincho selecionado: " + guincho.getNome());
+
         for (Funcionarioo funcionario : funcionariosDisponiveis) {
+            System.out.println("Nome do guincho no funcionário: " + funcionario.getGuinchoUtili());
+
             if (funcionario.getGuinchoUtili().equalsIgnoreCase(guincho.getClass().getSimpleName())) {
                 return funcionario;
             }
         }
         return null;
     }
+
+
 }

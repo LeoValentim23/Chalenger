@@ -1,7 +1,7 @@
 package Menus;
 
+import java.util.ArrayList;  // Importe a classe ArrayList
 import java.util.Scanner;
-import java.util.ArrayList;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import Classe.Cliente;
 
 public class MenuCadastro {
-    private static ArrayList<Cliente> clientes = new ArrayList<>();
+    private static ArrayList<Cliente> clientes = new ArrayList<>();  // Adicione a importação da classe ArrayList
     private static final String DB_URL = "jdbc:mysql://localhost:3306/seu_banco_de_dados";
     private static final String DB_USER = "seu_usuario";
     private static final String DB_PASSWORD = "sua_senha";
@@ -35,7 +35,6 @@ public class MenuCadastro {
         Cliente novoCliente = new Cliente(nome, carro, placa, pesoVeiculo, cpf);
         clientes.add(novoCliente);
 
-        // Inserir no banco de dados (simulação)
         inserirNoBancoDeDados(novoCliente);
 
         System.out.println("Cadastro realizado com sucesso!");
@@ -44,18 +43,24 @@ public class MenuCadastro {
     private static void inserirNoBancoDeDados(Cliente cliente) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
             String query = "INSERT INTO clientes (nome, carro, placa, peso_veiculo, cpf) VALUES (?, ?, ?, ?, ?)";
-            PreparedStatement preparedStatement = connection.prepareStatement(query);
-            preparedStatement.setString(1, cliente.getNome());
-            preparedStatement.setString(2, cliente.getCarro());
-            preparedStatement.setString(3, cliente.getPlaca());
-            preparedStatement.setString(4, cliente.getPesoVeiculo());
-            preparedStatement.setString(5, cliente.getCpf());
-            preparedStatement.executeUpdate();
+
+            try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+                preparedStatement.setString(1, cliente.getNome());
+                preparedStatement.setString(2, cliente.getCarro());
+                preparedStatement.setString(3, cliente.getPlaca());
+                preparedStatement.setString(4, cliente.getPesoVeiculo());
+                preparedStatement.setString(5, cliente.getCpf());
+
+                preparedStatement.executeUpdate();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 }
+
 
 
 
