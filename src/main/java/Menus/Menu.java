@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.InputMismatchException;
+import Conexão.ConnectionManager;
 
 public class Menu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcao;
-
 
         List<Funcionarioo> funcionariosDisponiveis = new ArrayList<>();
 
@@ -29,7 +29,7 @@ public class Menu {
 
                 switch (opcao) {
                     case 1:
-                        MenuCadastro.realizarCadastro(scanner);
+                        MenuCadastro.realizarCadastro(scanner, new ConnectionManager());
                         break;
                     case 2:
                         MenuNossosObjetivos.exibirObjetivos();
@@ -50,6 +50,5 @@ public class Menu {
                 scanner.nextLine();
             }
         }
-
     }
 }
