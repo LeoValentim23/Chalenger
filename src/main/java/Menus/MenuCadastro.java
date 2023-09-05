@@ -2,11 +2,11 @@ package Menus;
 
 import Classe.Cliente;
 import Conexão.ConnectionManager;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
+
 
 public class MenuCadastro {
     public static void realizarCadastro(Scanner scanner, ConnectionManager connectionManager) {

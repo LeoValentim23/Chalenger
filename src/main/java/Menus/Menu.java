@@ -1,18 +1,16 @@
 package Menus;
 
-import Classe.*;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 import Conexão.ConnectionManager;
+import java.util.Random;
+
 
 public class Menu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcao;
 
-        List<Funcionarioo> funcionariosDisponiveis = new ArrayList<>();
 
         System.out.println("Bem-vindo ao Menu Principal!");
 
@@ -35,7 +33,7 @@ public class Menu {
                         MenuNossosObjetivos.exibirObjetivos();
                         break;
                     case 3:
-                        MenuChamado.realizarChamado(scanner, funcionariosDisponiveis);
+                        MenuChamado.realizarChamado(scanner);
                         break;
                     case 0:
                         System.out.println("Obrigado por utilizar o sistema!");
@@ -49,6 +47,16 @@ public class Menu {
                 System.out.println("Entrada inválida. Por favor, insira um número.");
                 scanner.nextLine();
             }
+            Random random = new Random();
+            long numeroAleatorio = 0;
+
+            for (int i = 0; i < 10; i++) {
+                numeroAleatorio = numeroAleatorio * 10 + random.nextInt(10);
+            }
+
+            System.out.println("Numero do seu acesso/chamado/cadastro: " + numeroAleatorio);
         }
     }
 }
+
+

@@ -14,6 +14,10 @@ public abstract class Guincho {
     public String getNome() {
         return nome;
     }
+
+    public abstract double getCapacidadePeso();
 }
+
+
 
 

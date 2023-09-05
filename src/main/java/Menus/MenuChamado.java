@@ -1,17 +1,16 @@
 package Menus;
 
-import Classe.*;
 import Guincho.*;
-import java.util.Scanner;
-import java.util.List;
 
-class MenuChamado {
-    public static void realizarChamado(Scanner scanner, List<Funcionarioo> funcionariosDisponiveis) {
+import java.util.Scanner;
+
+public class MenuChamado {
+    public static void realizarChamado(Scanner scanner) {
         System.out.println("Chamado");
 
         System.out.println("Informe o peso do veículo:");
         int pesoVeiculo = scanner.nextInt();
-        scanner.nextLine(); // Consumir a quebra de linha
+        scanner.nextLine();
 
         System.out.println("O veículo está tombado? (S/N):");
         String respostaTombado = scanner.nextLine();
@@ -27,54 +26,26 @@ class MenuChamado {
                 new Guincho_tecnico_pesado_para_quincho_pesado()
         };
 
-        System.out.println("Guinchos disponíveis:");
+        int guinchoSelecionado = -1;
+        double diferencaPesoMaisProximo = Double.MAX_VALUE;
 
         for (int i = 0; i < guinchos.length; i++) {
-            if (guinchos[i].pesoAdequado(pesoVeiculo) &&
-                    (!veiculoTombado || guinchos[i].podeLevantarTombado())) {
-                System.out.println(i + 1 + " - " + guinchos[i].getNome());
+            if (guinchos[i].pesoAdequado(pesoVeiculo) && (!veiculoTombado || guinchos[i].podeLevantarTombado())) {
+                double capacidadePesoGuincho = guinchos[i].getCapacidadePeso();
+                double diferencaPeso = Math.abs(capacidadePesoGuincho - pesoVeiculo);
+                if (diferencaPeso < diferencaPesoMaisProximo) {
+                    diferencaPesoMaisProximo = diferencaPeso;
+                    guinchoSelecionado = i;
+                }
             }
         }
 
-        System.out.println("Selecione o guincho adequado:");
-        int opcaoGuincho = scanner.nextInt();
-        scanner.nextLine(); // Consumir a quebra de linha
-
-        if (opcaoGuincho >= 1 && opcaoGuincho <= guinchos.length) {
-            Guincho guinchoSelecionado = guinchos[opcaoGuincho - 1];
-            System.out.println("Guincho selecionado: " + guinchoSelecionado.getNome());
-
-            Funcionarioo funcionarioDisponivel = encontrarFuncionario(guinchoSelecionado, funcionariosDisponiveis);
-
-            if (funcionarioDisponivel != null) {
-                System.out.println("Funcionário Disponível:");
-                System.out.println("Nome: " + funcionarioDisponivel.getNome());
-                System.out.println("Número: " + funcionarioDisponivel.getnumero());
-                System.out.println("Status: " + funcionarioDisponivel.getStats());
-                System.out.println("Endereço: " + funcionarioDisponivel.getEndereço().getLogradouro() + ", " +
-                        funcionarioDisponivel.getEndereço().getNumero() + " - " +
-                        funcionarioDisponivel.getEndereço().getCidade() + " - " +
-                        funcionarioDisponivel.getEndereço().getEstado());
-            } else {
-                System.out.println("Nenhum funcionário disponível para esse guincho.");
-            }
+        if (guinchoSelecionado != -1) {
+            Guincho guincho = guinchos[guinchoSelecionado];
+            System.out.println("Guincho selecionado: " + guincho.getNome());
         } else {
-            System.out.println("Opção inválida.");
+            System.out.println("Nenhum guincho disponível para o veículo informado.");
         }
     }
-
-    private static Funcionarioo encontrarFuncionario(Guincho guincho, List<Funcionarioo> funcionariosDisponiveis) {
-        System.out.println("Nome do guincho selecionado: " + guincho.getNome());
-
-        for (Funcionarioo funcionario : funcionariosDisponiveis) {
-            System.out.println("Nome do guincho no funcionário: " + funcionario.getGuinchoUtili());
-
-            if (funcionario.getGuinchoUtili().equalsIgnoreCase(guincho.getClass().getSimpleName())) {
-                return funcionario;
-            }
-        }
-        return null;
-    }
-
-
 }
+
