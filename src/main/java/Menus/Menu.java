@@ -54,7 +54,7 @@ public class Menu {
                 numeroAleatorio = numeroAleatorio * 10 + random.nextInt(10);
             }
 
-            System.out.println("Numero do seu acesso/chamado/cadastro: " + numeroAleatorio);
+            System.out.println("Numero do seu protocolo: " + numeroAleatorio);
         }
     }
 }
