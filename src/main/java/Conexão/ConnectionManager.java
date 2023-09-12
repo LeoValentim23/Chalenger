@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionManager {
-    private static final String urlDeConexao = "jdbc:h2:file:/Users/DESKTOP/IdeaProjects/Chalenger/src/main/java/Banco;AUTO_SERVER=TRUE";
+    private static final String urlDeConexao = "jdbc:h2:file:./Banco/ChalengerBanco;AUTO_SERVER=TRUE";
     private static final String login = "sa";
     private static final String senha = "";
 
